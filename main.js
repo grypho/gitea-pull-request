@@ -29,6 +29,9 @@ async function run() {
       WITH_CREDENTIALS: true,
       TOKEN: token,
     });
+
+    const user = gitea_client.user.userGetCurrent()
+    console.log(user)
     
 
     const pr_opts = {owner, repo, body:{ head:'v1.9_stable', base:'master', title: 'Title required'}}
