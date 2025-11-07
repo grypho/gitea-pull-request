@@ -33996,7 +33996,6 @@ async function run() {
   try {
     const server_url = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("server_url")
     const name = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("name")
-    const body = getReleaseBody(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("body"), _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("body_path"))
     const tag_name = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("tag_name")
     const draft = getIsTrue(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("draft"))
     const prerelease = getIsTrue(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("prerelease"))
