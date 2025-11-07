@@ -8,7 +8,6 @@ async function run() {
   try {
     const server_url = core.getInput("server_url")
     const name = core.getInput("name")
-    const body = getReleaseBody(core.getInput("body"), core.getInput("body_path"))
     const tag_name = core.getInput("tag_name")
     const draft = getIsTrue(core.getInput("draft"))
     const prerelease = getIsTrue(core.getInput("prerelease"))
