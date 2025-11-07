@@ -1,0 +1,28 @@
+---
+name: gitea-pull-request
+description: "An action to create a pull request."
+author: "Grypho"
+inputs:
+  server_url:
+    description: the base url of the gitea API
+    required: false
+    default: ${{ github.server_url }}
+  branch_from:
+    description: The branch that shall be merged from
+    required: false
+    default: ${{ github.server_url }}
+  branch_to:
+    description: "The branch to which shall be merged"
+    required: false
+    default: ${{ github.release.body != '' &&   github.release.body || null }}
+  repository:
+    description: "Repository to make releases against, in <owner>/<repo> format"
+    required: false
+    default: ${{ github.repository }}
+  token:
+    description: "Gitea Token"
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: "node16"
+  main: "dist/index.js"
