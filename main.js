@@ -31,7 +31,7 @@ async function run() {
     });
     
 
-    const pr_opts = {owner, repo, body:{ head:'v1.9_stable', base:'master'}}
+    const pr_opts = {owner, repo, body:{ head:'v1.9_stable', base:'master', title: 'Title required'}}
     console.log(pr_opts)
 
 
