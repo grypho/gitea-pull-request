@@ -33990,6 +33990,10 @@ var __webpack_exports__ = {};
 
 
 
+function getIsTrue(v) {
+    const trueValue = ['true', 'True', 'TRUE']
+    return trueValue.includes(v)
+}
 
 
 async function run() {

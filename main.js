@@ -2,6 +2,10 @@ import core from "@actions/core";
 
 import gitea from "gitea-api";
 
+function getIsTrue(v) {
+    const trueValue = ['true', 'True', 'TRUE']
+    return trueValue.includes(v)
+}
 
 
 async function run() {
